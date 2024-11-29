@@ -1,0 +1,14 @@
+<div class="h-screen w-screen flex flex-col">
+    
+  <!-- Header Component -->
+  <div class="flex-shrink-0">
+      <app-header></app-header>
+  </div>
+
+  <!-- Router Outlet (Remaining Height) -->
+  <div class="flex-grow">
+      <router-outlet class="h-full"></router-outlet>
+  </div>
+  <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+  
+</div>
